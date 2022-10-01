@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas:
+        "header  header"
+        "main    main"
+        "footer  footer";
+    grid-template-rows: 100px 1fr 80px;
+    grid-template-columns: 1fr 320px;
+}
+
+header {
+    grid-area: header;
+    /* background-color: blue; */
+
+}
+
+main {
+    display: flexbox
+        /* background-color: green; */
+}
+
+/* 
+aside {
+    grid-area: aside;
+    background-color: red;
+} */
+
+footer {
+    align-items: center;
+    grid-area: footer;
+    /* background-color: aqua; */
+}
+
+h1 {
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    font-size: 100px;
+    margin: 0;
+}
+
+menu {
+    font-family: 'Comfortaa', cursive;
+    text-align: justify;
+    text-decoration: dotted;
+    border: 1px solid red;
+    margin-left: 0px 
+
+}
+
+.faixa ul {
+    display: flex;
+    justify-content: center;
+}
+
+.faixa ul li {
+    list-style-type: none;
+    padding-right: 14px;
+}
+
+p {
+    text-align: justify;
+}
+
+/* @font-face */
+@font-face {
+    font-family: 'Comfortaa', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+    font-family: "Bebas Neue", cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap")
+}
